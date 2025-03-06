@@ -76,6 +76,11 @@
 # COMMAND ----------
 
 # MAGIC %sql
+# MAGIC select * from bank_loan_analysis.tbl_customer_driver where health_score is null
+
+# COMMAND ----------
+
+# MAGIC %sql
 # MAGIC INSERT INTO bank_loan_analysis.tbl_watermark VALUES("BLA-read-loan-transaction-data", current_timestamp());
 
 # COMMAND ----------
